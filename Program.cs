@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.Win32.SafeHandles;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Linq;
@@ -23,16 +24,14 @@ namespace LINQ_Problems
             {
                 Console.WriteLine(word);
             }
-            //orderby
-
-            //select
-
+           
+            Console.ReadLine();
             //-------------------------------------------------------------------------------------------------------------
             //2)
 
             List<string> names = new List<string>() { "Mike", "Brad", "Nevin", "Zack", "Mike" };
 
-            var removeDuplicates = names.Where(n => n.());
+            var removeDuplicates = names.Where(n => n.));
             foreach (var name in removeDuplicates)
             {
                 Console.WriteLine(removeDuplicates);
@@ -41,8 +40,19 @@ namespace LINQ_Problems
 
             //-------------------------------------------------------------------------------------------------------------
             //3)
-             List<string> classGrades = new List<string>() {"80,100,92,89,65","93,81,78,84,69","73,88,83,99,64","98,100,66,74,55"};
+            List<string> classGrades = new List<string>() {"80,100,92,89,65","93,81,78,84,69","73,88,83,99,64","98,100,66,74,55"};
 
+            //where
+            var dropLowestGrade = classGrades.Remove(c => c.Min());
+            //orderby
+            var averageGradePerStudent = classGrades();
+            //select
+            var classAverage = classGrades. ();
+
+            //-------------------------------------------------------------------------------------------------------------
+            //4)
+
+            List<string> lastName = new List<string>() { "Terrill" };
 
 
         }
