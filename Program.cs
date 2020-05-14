@@ -42,8 +42,10 @@ namespace LINQ_Problems
 
             //where
             //var dropLowestGrade = classGrades.Remove(c => c.Min());
-            ////orderby
+
+            //orderby
             //var averageGradePerStudent = classGrades();
+
             ////select
             //var classAverage = classGrades. ();
 
